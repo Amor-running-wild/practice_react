@@ -1,9 +1,10 @@
 function Nav() {
+  const buttons = ['Home', 'About', 'Projects', 'Contact'];
+
   return <ul className="flex">
-    <li><Button text = "Home"/></li>
-    <li><Button text = "About"/></li>
-    <li><Button text = "Projects"/></li>
-    <li><Button text = "Contact" /></li>
+    {buttons.map((btn) => {
+      return btn.startsWith('H') && <li key={btn}><Button text={btn}></Button></li>;
+    })} 
   </ul>
   
 }
