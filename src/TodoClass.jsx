@@ -59,7 +59,7 @@ class ClassInput extends Component {
               {todo}
             </p>
              <button
-                type='button' 
+            Add Tasks to see here    type='button' 
                 onClick={() => this.handleDelete(todo)}
               >Delete</button>
             </div>
